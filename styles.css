@@ -1,5 +1,5 @@
 body{
-    background-image: url(./imagenes/bg-quinta.jpg);
+    background-color: #adebb3;
 }
 /*---------------------------barra de navegación*/
 nav{
@@ -21,11 +21,13 @@ nav{
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
 }
+
 .container{
     display:inline-flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
+    padding: 1rem;
 
 }
 .nav-links{
@@ -42,6 +44,15 @@ a{
     width: 100%;
     position: relative;
 }
+.carousel-item {
+height: 100vh;
+}
+
+.carousel-item img {
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
 h1{
     position: absolute;
     top: 35%;
@@ -53,22 +64,21 @@ h1{
 }
 /*-----------------------main------------------------------*/
 main{
-    background-image: url(./imagenes/bg-p.jpg);
+    background-color:#ffee8c;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #151f2e;
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: 20px;
+    padding: 1rem;
+
 }
 
 .presentacion {
     background: rgba(80, 120, 255, 0.12);
     backdrop-filter: blur(14px);
-
+    color:#353839;
     border: 1px solid rgba(255, 255, 255, 0.15);
 
     box-shadow:
@@ -79,9 +89,10 @@ main{
 
 }
 .servicios {
-background-image: url(./imagenes/bg-quinta.jpg);
+background-color:#d5c58a;
 width: 100%;
 border-radius: 24px;
+padding: 1rem;
 
 
 
@@ -89,6 +100,7 @@ border-radius: 24px;
 }
 .imagenes{
     font-weight: 0.2rem;
+    width: 100%;
 }
 .parrilla, .piscina,.pool{
     border-radius: 24px;
@@ -114,10 +126,39 @@ border-radius: 24px;
     width: 100%;
 }
 footer{
-    background: linear-gradient(to bottom, #000033, #000080);
+background: #4f5d2f;
+padding: 1rem;
+
 
 }
 .contactos{
     text-align: center;
     color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+.icono{
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+.insta-{
+    height: 5rem;
+    width: 5rem;
+}
+.face-{
+    height:5.5rem;
+    width: 5.5rem;
+}
+.item-footer{
+    width: 50%;
+    border-bottom: solid 1px #fff;
+    padding: 1rem;
+    border-bottom: 2px solid #fff;
+    box-shadow: 0 3px 0px rgba(0,0,0,0.12);
 }
