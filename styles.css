@@ -32,12 +32,28 @@ nav{
 }
 .nav-links{
     display: inline-flex;
-    gap: 1.5rem;
+    gap: 1.8rem;
     list-style: none;
+    padding: 0.7rem;
+    font-weight: bolder;
+    font-family: "Dancing Script", cursive;
+}
+.logo{
+    padding-bottom: 0.6rem;
+    font-weight: bolder;
+    font-family: "Dancing Script", cursive;
 }
 a{
     text-decoration: none;
     color: inherit;
+}
+@media(min-width: 890px){
+    .nav-links{
+        font-size: 1.5rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
 }
 /*-----------------------header------------------------------*/
 #carouselExampleSlidesOnly{
@@ -52,15 +68,29 @@ height: 100vh;
 height: 100%;
 width: 100%;
 object-fit: cover;
+object-position: center;
+}
+.d-block{
+    object-fit: cover;
 }
 h1{
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3rem;
-    font-family: 'DM Sans', sans-serif;
+    font-size: 4rem;
+    border: solid 0.5px #fff;
+    padding: 1rem;
+    border-radius: 30px;
+    font-family: "Dancing Script", cursive;
+    color:#d5c58a;
+    text-shadow: 0 1px 6px rgba(0,0,0,0.80);
 }
 /*-----------------------main------------------------------*/
 main{
@@ -87,18 +117,18 @@ main{
     margin-bottom: 1rem;
     padding: 1rem;
 
+
 }
-.servicios {
+
+#servicios{
 background-color:#d5c58a;
 width: 100%;
 border-radius: 24px;
 padding: 1rem;
 
-
-
-
 }
-.imagenes{
+
+#imagenes{
     font-weight: 0.2rem;
     width: 100%;
 }
@@ -125,19 +155,62 @@ padding: 1rem;
     height: 100%;
     width: 100%;
 }
+.galeria{
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+}
+@media(min-width: 890px){
+    .presentacion{
+        width: 80%;
+        height: 20rem;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        padding: 3rem;
+    }
+    #servicios{
+        width: 80%;
+        height: 30rem;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .galeria{
+        font-size: 4rem;
+    }
+    #imagenes{
+        display: flex;
+        gap: 2rem;
+        height: 30rem;
+        background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 3rem;
+
+    }
+    .parrilla, .piscina,.pool{
+        width: 100%;
+        height: 100%;
+    }
+}
+/*-----------------------footer------------------------------*/
 footer{
 background: #4f5d2f;
 padding: 1rem;
 
 
 }
-.contactos{
+#contactos{
     text-align: center;
     color: #f5f5dc;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+    font-family: "Dancing Script", cursive;
 
 }
 .icono{
@@ -157,8 +230,17 @@ padding: 1rem;
 }
 .item-footer{
     width: 50%;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 0.5px #fff;
     padding: 1rem;
-    border-bottom: 2px solid #fff;
     box-shadow: 0 3px 0px rgba(0,0,0,0.12);
 }
+    @media(min-width: 890px){
+    #contactos{
+        font-family: "Dancing Script", cursive;
+        font-size: 1.5rem;
+    }
+    .item-footer{
+        width: 30%;
+        border-bottom: solid 0.5px #fff;
+    }
+    }
